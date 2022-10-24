@@ -2,25 +2,23 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-function ColorSchemesExample() {
+function CollapsibleExample() {
   return (
-    <>
-      <Navbar bg="light" expand="lg">
-        <Container>
-          <Navbar.Brand className ="name" href="#home">Felipe Avelar</Navbar.Brand>
-          <Nav className="ml-auto">
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav.Link className ="nav-link" href="#home">Home</Nav.Link>
-            <Nav.Link className ="nav-link" href="#About">About</Nav.Link>
-            <Nav.Link className ="nav-link" href="#pricing">Contact</Nav.Link>
-          </Navbar.Collapse>
+    <Navbar collapseOnSelect expand="lg" bg="black" variant="black">
+      <Container>
+        <Navbar.Brand href="#home">Felipe Avelar</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
           </Nav>
-        </Container>
-      </Navbar>
-      <br />
-    </>
+          <Nav>
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default ColorSchemesExample;
+export default CollapsibleExample;
