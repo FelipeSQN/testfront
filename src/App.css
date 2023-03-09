@@ -2,15 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-a:hover {
-    background-color: white;
+nav a.nav-link.active {
+    color: white!important;
 }
 
 nav a.nav-link {
+    color: white!important;
     margin-right: 20px;
     padding: 9px 0;
     opacity: 1;
-    color: white;
     font-size: 18px;
     line-height: 20px;
     font-weight: 500;
