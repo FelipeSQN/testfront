@@ -22,13 +22,13 @@ nav a.nav-link {
 }
 
 .name {
+    color: white;
     font-weight: 500;
     letter-spacing: 0.0375rem;
-    color: white;
 }
 
 nav a.navbar-brand{
-    color: white;
+    color: white!important;
 }
 
 /***Header****/
